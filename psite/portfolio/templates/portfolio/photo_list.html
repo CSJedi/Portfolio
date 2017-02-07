@@ -1,1 +1,6 @@
-{{photos}}
+{% for photo in photos %}
+<img src="C:/Users/Tatiana/Documents/Portfolio/psite/pic_folder/25211168.jpg" width="189" height="255" alt={{photo.model_pic}}/>
+    <p>title :{{photo.title}}   
+    description: {{photo.description}}  
+    published_date: {{photo.published_date}}</P>
+{% endfor %}
